@@ -1,9 +1,14 @@
 :root {
-    --text-stroke-shadow: 0px 1px 1px #fff, 0px -1px 1px #fff, 1px 0px 1px #fff, -1px 0px 1px #fff
+    --text-stroke-shadow: 0px 1px 1px #fff, 0px -1px 1px #fff, 1px 0px 1px #fff, -1px 0px 1px #fff;
+    --text-stroke-shadow-black: 0px 1px 1px #000, 0px -1px 1px #000, 1px 0px 1px #000, -1px 0px 1px #000
 }
 
 #fixed-right {
     z-index: 999;
+}
+
+.font-outline-1 {
+    text-shadow: var(--text-stroke-shadow-black)
 }
 
 .font-outline-2 {

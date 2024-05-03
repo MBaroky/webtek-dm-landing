@@ -8,7 +8,7 @@ function WelcomeSection() {
     <section className='flex justify-center items-center px-16 py-20 rounded-none bg-neutral-900 max-md:px-5 rounded-br-3xl rounded-bl-3xl'>
       <div className='mt-24 w-full max-w-[1223px] max-md:mt-10 max-md:max-w-full'>
         <div className='flex gap-5 max-md:flex-col max-md:gap-0'>
-          <div className='flex flex-col min-h-[300px] w-[67%] max-md:ml-0 max-md:w-full relative z-10'>
+          <div className='flex flex-col min-h-[300px] pb-[150px] w-[67%] max-md:ml-0 max-md:w-full relative z-10'>
             <h1 className='text-6xl max-w-[556px] font-bold text-white  max-md:mt-10 max-md:max-w-full max-md:text-4xl'>
               Welcome to Your Ultimate
               <span className='text-black font-outline-2 '>
@@ -17,7 +17,7 @@ function WelcomeSection() {
             </h1>
             <img
               src={coverImg}
-              className='absolute right-0 w-auto h-full bottom-0 max-md:w-full max-md:h-auto -z-10'
+              className='absolute right-0 w-[250px] h-auto bottom-0 md:h-full md:w-auto -z-10'
               alt='cover'
             />
           </div>

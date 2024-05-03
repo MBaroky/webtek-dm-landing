@@ -5,9 +5,10 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+  // CarouselNext,
+  // CarouselPrevious,
+  // } from "@/components/ui/carousel";
+} from "./ui/carousel";
 
 export function LogosCarousel() {
   return (
@@ -21,12 +22,12 @@ export function LogosCarousel() {
           delay: 2000,
         }),
       ]}
-      className='w-full'>
+      className='w-full  mt-5'>
       <CarouselContent className='-ml-1'>
         {Array.from({ length: 8 }).map((_, index) => (
           <CarouselItem
             key={index}
-            className='pl-1 md:basis-1/4 lg:basis-2/12'>
+            className='pl-1 basis-1/3 md:basis-1/4 lg:basis-2/12'>
             <div className='p-1'>
               <div className='flex aspect-video items-center justify-center '>
                 <img

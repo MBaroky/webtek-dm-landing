@@ -1,0 +1,38 @@
+import { useState } from "react";
+import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import { Button } from "./ui/button";
+import { Menu as MenuIcon } from "lucide-react";
+import { navItems } from "../data/navItems";
+import NavItem from "./NavItem";
+import BookSheet from "./BookSheet";
+
+export default function MobileNav() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <Sheet open={open} onOpenChange={setOpen}>
+      {/* This button will trigger open the mobile sheet menu */}
+      <SheetTrigger asChild>
+        <Button variant='ghost' size='icon' className='lg:hidden'>
+          <MenuIcon />
+        </Button>
+      </SheetTrigger>
+
+      <SheetContent side='top' className='bg-black text-white'>
+        <div className='flex flex-col items-center pb-20 mx-auto w-full text-base font-bold text-white max-w-[480px]'>
+          <a
+            href='/'
+            className='justify-center items-center self-stretch px-10 pt-10 pb-px w-full text-xl font-semibold uppercase bg-black text-center'>
+            Digital Marketing
+          </a>
+          <nav className='my-24 flex flex-col justify-center items-center gap-4'>
+            {navItems.map((item, index) => (
+              <NavItem key={item.label} {...item} />
+            ))}
+          </nav>
+          <BookSheet />
+        </div>
+      </SheetContent>
+    </Sheet>
+  );
+}
