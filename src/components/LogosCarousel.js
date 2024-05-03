@@ -21,24 +21,26 @@ export function LogosCarousel() {
           delay: 2000,
         }),
       ]}
-      className='w-full max-w-sm'>
+      className='w-full'>
       <CarouselContent className='-ml-1'>
-        {Array.from({ length: 5 }).map((_, index) => (
+        {Array.from({ length: 8 }).map((_, index) => (
           <CarouselItem
             key={index}
-            className='pl-1 md:basis-1/2 lg:basis-1/3'>
+            className='pl-1 md:basis-1/4 lg:basis-2/12'>
             <div className='p-1'>
               <div className='flex aspect-video items-center justify-center '>
-                <span className='text-2xl font-semibold'>
-                  {index + 1}
-                </span>
+                <img
+                  style={{ filter: "grayscale(1) invert(1)" }}
+                  src={`../img/brands-${index + 1}.png`}
+                  alt=''
+                />
               </div>
             </div>
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
+      {/* <CarouselPrevious />
+      <CarouselNext /> */}
     </Carousel>
   );
 }

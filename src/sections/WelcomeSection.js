@@ -48,7 +48,7 @@ function WelcomeSection() {
             </div>
           </div>
         </div>
-        {/* <LogosCarousel /> */}
+        <LogosCarousel />
       </div>
     </section>
   );
