@@ -2,14 +2,14 @@ import * as React from "react";
 import fixedPhone from "../assets/fixed-phone.svg";
 import fixedWhatsapp from "../assets/fixed-whatsapp.svg";
 
-function ImageSquare({ src, alt, link }) {
+function ImageSquare({ src, alt, link, className }) {
   return (
     <a href={link}>
       <img
         loading='lazy'
         src={src}
         alt={alt}
-        className='w-full aspect-square'
+        className={`w-full aspect-square ${className}`}
       />
     </a>
   );
@@ -39,7 +39,7 @@ function FixedRight() {
           src={image.src}
           alt={image.alt}
           link={image.link}
-          className={index === 1 ? "mt-5" : ""}
+          className={index > 0 ? "mt-5" : ""}
         />
       ))}
     </div>
