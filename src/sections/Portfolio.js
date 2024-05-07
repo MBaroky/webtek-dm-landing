@@ -5,7 +5,7 @@ function Portfolio() {
   const { PUBLIC_URL } = process.env;
   return (
     <section
-      className='min-h-[450px] flex flex-col md:p-24 tracking-tighter max-md:text-4xl'
+      className='min-h-[450px] flex flex-col md:p-24 tracking-tighter max-md:text-4xl rounded-br-3xl rounded-bl-3xl -mb-3 z-20'
       style={{
         backgroundImage: `url("${PUBLIC_URL}/img/works-bg.png")`,
       }}>

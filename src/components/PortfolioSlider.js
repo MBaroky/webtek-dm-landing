@@ -37,12 +37,6 @@ function HeroSection({ title, backgroundImage }) {
 }
 
 export default function PortfolioSlider() {
-  const [emblaRef, emblaApi] = useEmblaCarousel();
-
-  useEffect(() => {
-    if (emblaApi) console.log(emblaApi.slideNodes());
-  }, [emblaApi]);
-
   const { PUBLIC_URL } = process.env;
   const heroSections = [
     {
