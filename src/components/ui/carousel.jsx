@@ -9,7 +9,7 @@ import { cn } from "../../lib/utils";
 import { Button } from "./button";
 const CarouselContext = React.createContext(null);
 
-function useCarousel() {
+export function useCarousel() {
   const context = React.useContext(CarouselContext);
 
   if (!context) {
@@ -167,7 +167,13 @@ CarouselItem.displayName = "CarouselItem";
 
 const CarouselPrevious = React.forwardRef(
   (
-    { className, variant = "outline", size = "icon", ...props },
+    {
+      className,
+      variant = "outline",
+      size = "icon",
+      children,
+      ...props
+    },
     ref
   ) => {
     const { orientation, scrollPrev, canScrollPrev } = useCarousel();
@@ -187,7 +193,8 @@ const CarouselPrevious = React.forwardRef(
         disabled={!canScrollPrev}
         onClick={scrollPrev}
         {...props}>
-        <ArrowLeft className='h-4 w-4' />
+        {/* <ArrowLeft className='h-4 w-4' /> */}
+        {children}
         <span className='sr-only'>Previous slide</span>
       </Button>
     );
@@ -197,7 +204,13 @@ CarouselPrevious.displayName = "CarouselPrevious";
 
 const CarouselNext = React.forwardRef(
   (
-    { className, variant = "outline", size = "icon", ...props },
+    {
+      className,
+      variant = "outline",
+      size = "icon",
+      children,
+      ...props
+    },
     ref
   ) => {
     const { orientation, scrollNext, canScrollNext } = useCarousel();
@@ -217,7 +230,8 @@ const CarouselNext = React.forwardRef(
         disabled={!canScrollNext}
         onClick={scrollNext}
         {...props}>
-        <ArrowRight className='h-4 w-4' />
+        {/* <ArrowRight className='h-4 w-4' /> */}
+        {children}
         <span className='sr-only'>Next slide</span>
       </Button>
     );

@@ -1,5 +1,10 @@
 import { useState } from "react";
-import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetClose,
+} from "./ui/sheet";
 import { Button } from "./ui/button";
 import { Menu as MenuIcon } from "lucide-react";
 import { navItems } from "../data/navItems";
