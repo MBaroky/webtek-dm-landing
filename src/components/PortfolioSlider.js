@@ -1,9 +1,6 @@
 import * as React from "react";
-import { useEffect } from "react";
 
 import Autoplay from "embla-carousel-autoplay";
-
-import useEmblaCarousel from "embla-carousel-react";
 
 import {
   Carousel,
@@ -65,13 +62,11 @@ export default function PortfolioSlider() {
             align: "start",
             loop: true,
           }}
-          plugins={
-            [
-              // Autoplay({
-              //   delay: 2000,
-              // }),
-            ]
-          }
+          plugins={[
+            Autoplay({
+              delay: 2000,
+            }),
+          ]}
           className='w-full  mt-5'>
           <CarouselContent className='-ml-1'>
             {heroSections.map((section, index) => (

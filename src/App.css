@@ -3,6 +3,7 @@
     --text-stroke-shadow-black: 0px 1px 1px #000, 0px -1px 1px #000, 1px 0px 1px #000, -1px 0px 1px #000
 }
 
+
 #fixed-right {
     z-index: 999;
 }
