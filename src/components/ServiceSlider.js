@@ -1,8 +1,8 @@
 import * as React from "react";
-
-import Autoplay from "embla-carousel-autoplay";
 import { servicesList } from "../data/servicesData";
 import Service from "./Service";
+
+import Autoplay from "embla-carousel-autoplay";
 
 import {
   Carousel,
