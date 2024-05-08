@@ -3,7 +3,9 @@ import ServiceSlider from "../components/ServiceSlider";
 
 export default function Services() {
   return (
-    <div className='flex flex-col items-center p-20 text-white rounded-none bg-neutral-900 max-md:px-5'>
+    <secion
+      id='services'
+      className='-mb-5 relative z-[8] flex flex-col items-center p-20 text-white  rounded-br-3xl rounded-bl-3xl bg-neutral-900 max-md:px-5'>
       <div className='shrink-0 self-start mt-2 bg-orange-100 h-[3px] w-[45px] max-md:ml-2.5'></div>
       <div className='mt-4 self-start text-left font-medium max-md:max-w-full'>
         Our Digital Marketing Services
@@ -20,6 +22,6 @@ export default function Services() {
         <ServiceSlider />
       </div>
       {/* </div> */}
-    </div>
+    </secion>
   );
 }

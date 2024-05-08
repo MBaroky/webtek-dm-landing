@@ -5,7 +5,9 @@ import BookSheet from "../components/BookSheet";
 
 function Header() {
   return (
-    <header className='flex justify-center items-center px-16 py-4 font-medium text-white bg-neutral-900 max-md:px-5 fixed top-0 left-0 w-full z-50'>
+    <header
+      id='main-header'
+      className='flex justify-center items-center px-16 py-4 font-medium text-white bg-neutral-900 max-md:px-5 fixed top-0 left-0 w-full z-50'>
       <FixedRight />
       <div className='flex gap-5 items-center w-full max-w-[1196px] max-md:flex-wrap max-md:max-w-full'>
         <a

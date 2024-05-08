@@ -5,7 +5,9 @@ import { LogosCarousel } from "../components/LogosCarousel";
 
 function WelcomeSection() {
   return (
-    <section className='flex justify-center items-center px-16 py-20 rounded-none bg-neutral-900 max-md:px-5 rounded-br-3xl rounded-bl-3xl'>
+    <section
+      id='welcome'
+      className='-mb-5 relative flex justify-center items-center px-16 py-20 rounded-none bg-neutral-900 max-md:px-5 rounded-br-3xl rounded-bl-3xl z-[11]'>
       <div className='mt-24 w-full max-w-[1223px] max-md:mt-10 max-md:max-w-full'>
         <div className='flex gap-5 max-md:flex-col max-md:gap-0'>
           <div className='flex flex-col min-h-[300px] pb-[150px] w-[67%] max-md:ml-0 max-md:w-full relative z-10'>

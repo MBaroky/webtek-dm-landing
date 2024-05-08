@@ -3,7 +3,9 @@ import React from "react";
 
 function Industries() {
   return (
-    <div className='flex flex-col justify-center items-center px-16 py-20 bg-gray-200 rounded-none max-md:px-5'>
+    <section
+      id='industries'
+      className='-mb-5 relative z-[6] flex flex-col justify-center items-center px-16 py-20 bg-gray-200 rounded-none max-md:px-5 z-'>
       <div className='flex flex-col mt-2.5 w-full max-w-[1202px] max-md:max-w-full'>
         <div className='flex gap-5 self-start text-6xl font-bold max-md:flex-wrap max-md:text-4xl'>
           <div className='flex-auto text-neutral-900 max-md:text-4xl'>
@@ -25,7 +27,7 @@ function Industries() {
         </div>
       </div>
       <IndustSlider />
-    </div>
+    </section>
   );
 }
 

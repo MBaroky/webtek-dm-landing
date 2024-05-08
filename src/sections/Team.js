@@ -4,7 +4,9 @@ import rightArrow from "../assets/right-arrow.svg";
 export default function Team() {
   const { PUBLIC_URL } = process.env;
   return (
-    <div className=' rounded-br-3xl rounded-bl-3xl flex justify-center items-center px-16 py-20 text-base font-medium rounded-none bg-[linear-gradient(180deg,#F9E1D0_0%,#EEEEFD_100%)] text-neutral-900 max-md:px-5 rounded-br-3xl rounded-bl-3xl '>
+    <section
+      id='team'
+      className='-mb-5 relative z-[9] rounded-br-3xl rounded-bl-3xl flex justify-center items-center px-16 py-20 text-base font-medium rounded-none bg-[linear-gradient(180deg,#F9E1D0_0%,#EEEEFD_100%)] text-neutral-900 max-md:px-5 rounded-br-3xl rounded-bl-3xl '>
       <div className='flex flex-col w-full max-w-[1214px] max-md:max-w-full'>
         <div className='shrink-0 w-12 bg-violet-700 h-[3px]' />
         <div className='mt-4 max-md:max-w-full'>About Us</div>
@@ -36,6 +38,6 @@ export default function Team() {
           alt=''
         />
       </div>
-    </div>
+    </section>
   );
 }
