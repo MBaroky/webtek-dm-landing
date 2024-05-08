@@ -8,7 +8,7 @@ import {
   // CarouselNext,
   // CarouselPrevious,
   // } from "@/components/ui/carousel";
-} from "./ui/carousel";
+} from "./ui/carousel_mod";
 
 export function LogosCarousel() {
   return (

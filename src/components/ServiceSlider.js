@@ -1,4 +1,5 @@
 import * as React from "react";
+import useEmblaCarousel from "embla-carousel-react";
 
 import Autoplay from "embla-carousel-autoplay";
 import { servicesList } from "../data/servicesData";
@@ -8,7 +9,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-} from "./ui/carousel";
+  CarouselDots,
+} from "./ui/carousel_mod";
 
 export default function ServiceSlider() {
   return (
@@ -42,6 +44,7 @@ export default function ServiceSlider() {
               </CarouselItem>
             ))}
           </CarouselContent>
+          <CarouselDots />
         </Carousel>
       </div>
     </div>

@@ -9,7 +9,7 @@ import {
   CarouselNext,
   CarouselPrevious,
   // } from "@/components/ui/carousel";
-} from "./ui/carousel";
+} from "./ui/carousel_mod";
 
 import arrowRight from "../assets/works-arrow-right.svg";
 import arrowLeft from "../assets/works-arrow-left.svg";

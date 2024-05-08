@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./sections/Header";
+import OurWorks from "./sections/OurWorks";
 import Portfolio from "./sections/Portfolio";
 import Services from "./sections/Services";
 import Team from "./sections/Team";
@@ -13,6 +14,7 @@ function App() {
       <Portfolio />
       <Team />
       <Services />
+      <OurWorks />
     </main>
   );
 }
