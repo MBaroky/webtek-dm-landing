@@ -241,6 +241,7 @@ CarouselNext.displayName = "CarouselNext";
 
 const CarouselDots = React.forwardRef((props, ref) => {
   const { api } = useCarousel();
+  // eslint-disable-next-line
   const [updateState, setUpdateState] = React.useState(false);
   const toggleUpdateState = React.useCallback(
     () => setUpdateState(prevState => !prevState),
