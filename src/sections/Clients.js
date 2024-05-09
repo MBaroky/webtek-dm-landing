@@ -12,14 +12,14 @@ import {
 function Clients() {
   const { PUBLIC_URL } = process.env;
   const imagesList = [
-    `${PUBLIC_URL}/img/clients-01.png`,
-    `${PUBLIC_URL}/img/clients-02.png`,
-    `${PUBLIC_URL}/img/clients-03.png`,
-    `${PUBLIC_URL}/img/clients-04.png`,
-    `${PUBLIC_URL}/img/clients-05.png`,
-    `${PUBLIC_URL}/img/clients-06.png`,
-    `${PUBLIC_URL}/img/clients-07.png`,
-    `${PUBLIC_URL}/img/clients-08.png`,
+    `${PUBLIC_URL}/img/clients/clients-01.png`,
+    `${PUBLIC_URL}/img/clients/clients-02.png`,
+    `${PUBLIC_URL}/img/clients/clients-03.png`,
+    `${PUBLIC_URL}/img/clients/clients-04.png`,
+    `${PUBLIC_URL}/img/clients/clients-05.png`,
+    `${PUBLIC_URL}/img/clients/clients-06.png`,
+    `${PUBLIC_URL}/img/clients/clients-07.png`,
+    `${PUBLIC_URL}/img/clients/clients-08.png`,
   ];
   return (
     <section
@@ -42,14 +42,15 @@ function Clients() {
           },
           align: "start",
           loop: true,
+          slidesToScroll: 2,
         }}
         plugins={[
           Autoplay({
             delay: 2000,
           }),
         ]}
-        className=' w-full'>
-        <CarouselContent className='flex md:flex-wrap w-full mt-9 md:flex-row'>
+        className='-ml-1 w-full'>
+        <CarouselContent className='flex md:flex-wrap w-full mt-9 md:flex-row ml-0'>
           {imagesList.map((item, index) => (
             <CarouselItem
               key={index}
@@ -60,8 +61,13 @@ function Clients() {
                   ? "md:border-b-[1px]"
                   : ""
               }
-              clients-slide basis-6/12 pl-0 md:basis-1/4 flex  aspect-square justify-center items-center border-black border-solid max-md:border-l-[1px] max-md:p-3`}>
+              clients-slide basis-6/12 pl-0 md:basis-1/4 flex  aspect-square justify-center items-center border-black border-solid max-md:p-3 relative`}>
               <img src={item} alt='' />
+              {index % 2 === 0 ? (
+                <div className='md:hidden bg-black w-[1px] absolute h-full left-[100%] top-0'></div>
+              ) : (
+                <></>
+              )}
             </CarouselItem>
           ))}
         </CarouselContent>

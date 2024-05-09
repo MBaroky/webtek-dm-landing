@@ -38,19 +38,19 @@ export default function PortfolioSlider() {
   const heroSections = [
     {
       title: "Pulse website ui ux case study",
-      backgroundImage: `${PUBLIC_URL}/img/works-2.png`,
+      backgroundImage: `${PUBLIC_URL}/img/works/works-2.png`,
     },
     {
       title: "The Spiarl Code Official Website",
-      backgroundImage: `${PUBLIC_URL}/img/works-1.png`,
+      backgroundImage: `${PUBLIC_URL}/img/works/works-1.png`,
     },
     {
       title: "Pulse website ui ux case study",
-      backgroundImage: `${PUBLIC_URL}/img/works-2.png`,
+      backgroundImage: `${PUBLIC_URL}/img/works/works-2.png`,
     },
     {
       title: "The Spiarl Code Official Website",
-      backgroundImage: `${PUBLIC_URL}/img/works-1.png`,
+      backgroundImage: `${PUBLIC_URL}/img/works/works-1.png`,
     },
   ];
 

@@ -19,19 +19,19 @@ function WorksSlider() {
   const heroSections = [
     {
       title: "Pulse website ui ux case study",
-      backgroundImage: `${PUBLIC_URL}/img/works-2.png`,
+      backgroundImage: `${PUBLIC_URL}/img/works/works-2.png`,
     },
     {
       title: "The Spiarl Code Official Website",
-      backgroundImage: `${PUBLIC_URL}/img/works-1.png`,
+      backgroundImage: `${PUBLIC_URL}/img/works/works-1.png`,
     },
     {
       title: "Pulse website ui ux case study",
-      backgroundImage: `${PUBLIC_URL}/img/works-2.png`,
+      backgroundImage: `${PUBLIC_URL}/img/works/works-2.png`,
     },
     {
       title: "The Spiarl Code Official Website",
-      backgroundImage: `${PUBLIC_URL}/img/works-1.png`,
+      backgroundImage: `${PUBLIC_URL}/img/works/works-1.png`,
     },
   ];
 
@@ -59,7 +59,7 @@ function WorksSlider() {
                 <div className='flex flex-col md:w-[50%] max-md:ml-0 max-md:w-full'>
                   <img
                     loading='lazy'
-                    src={`${process.env.PUBLIC_URL}/img/our_works_01.jpg`}
+                    src={`${process.env.PUBLIC_URL}/img/works/our_works_01.jpg`}
                     className='w-full aspect-[1.2] object-cover object-right max-md:mt-6 max-md:max-w-full'
                     alt=''
                   />
