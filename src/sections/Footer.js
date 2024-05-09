@@ -120,7 +120,9 @@ const ContactForm = () => (
 
 function Footer() {
   return (
-    <div className='flex justify-center items-center px-16 py-20 bg-violet-700 max-md:px-5'>
+    <div
+      id='contact'
+      className='flex justify-center items-center px-16 py-20 bg-violet-700 max-md:px-5'>
       <div className='flex flex-col py-0.5 w-full max-w-[1196px] max-md:max-w-full'>
         <div className='mt-1 max-md:max-w-full'>
           <div className='flex gap-5 max-md:flex-col max-md:gap-0'>
@@ -165,6 +167,8 @@ function Footer() {
             {social.map((item, index) => (
               <li key={index}>
                 <a
+                  target='_blank'
+                  rel='noreferrer'
                   style={{ filter: "grayscale(1) invert(1)" }}
                   className='ml-3 flex items-center justify-center aspect-square w-[40px] rounded-full border-solid border-2 border-neutral-500'
                   href={item.link}>

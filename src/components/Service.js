@@ -16,7 +16,7 @@ export default function Service({ img, icon, title, desc }) {
           <br />
         </div>
       </div>
-      <div className='service-img flex overflow-hidden relative flex-col pb-12 mt-14 w-full aspect-[1.2]'>
+      <div className='service-img  flex overflow-hidden relative flex-col pb-12 mt-14 w-full aspect-[1.2]'>
         <img
           loading='lazy'
           src={img}

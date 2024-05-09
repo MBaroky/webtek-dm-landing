@@ -41,7 +41,7 @@ export default function MobileNav() {
           </header>
           <nav className='my-24 flex flex-col justify-center items-center gap-4'>
             {navItems.map((item, index) => (
-              <NavItem key={item.label} {...item} />
+              <NavItem key={index} {...item} />
             ))}
           </nav>
           <BookSheet />
