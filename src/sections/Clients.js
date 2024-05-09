@@ -55,12 +55,8 @@ function Clients() {
             <CarouselItem
               key={index}
               className={`${
-                ![0, 4].includes(index) ? "md:border-l-[1px]" : ""
-              } ${
-                ![4, 5, 6, 7].includes(index)
-                  ? "md:border-b-[1px]"
-                  : ""
-              }
+                index % 4 !== 0 ? "md:border-l-[1px]" : ""
+              } ${index < 4 ? "md:border-b-[1px]" : ""}
               clients-slide basis-6/12 pl-0 md:basis-1/4 flex  aspect-square justify-center items-center border-black border-solid max-md:p-3 relative`}>
               <img src={item} alt='' />
               {index % 2 === 0 ? (

@@ -42,7 +42,9 @@ function IndustSlider() {
       <CarouselContent className='-ml-1 md:flex-col lg:flex lg:w-full mt-9 lg:flex-row lg:items-stretch'>
         {slides.map((slide, index) => {
           return slide ? (
-            <CarouselItem className='indust-slide  lg:basis-1/5 flex flex-col max-lg:flex-row max-lg:flex-wrap justify-center py-1 max-lg:w-full'>
+            <CarouselItem
+              key={index}
+              className='indust-slide  lg:basis-1/5 flex flex-col max-lg:flex-row max-lg:flex-wrap justify-center py-1 max-lg:w-full'>
               {industriesData
                 .filter(item => item.slide === slide)
                 .map((item, index) => (

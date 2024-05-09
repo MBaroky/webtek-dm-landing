@@ -3,7 +3,7 @@ import ServiceSlider from "../components/ServiceSlider";
 
 export default function Services() {
   return (
-    <secion
+    <section
       id='services'
       className='-mb-5 relative z-[8] flex flex-col items-center p-20 text-white  rounded-br-3xl rounded-bl-3xl bg-neutral-900 max-md:px-5'>
       <div className='shrink-0 self-start mt-2 bg-orange-100 h-[3px] w-[45px] max-md:ml-2.5'></div>
@@ -22,6 +22,6 @@ export default function Services() {
         <ServiceSlider />
       </div>
       {/* </div> */}
-    </secion>
+    </section>
   );
 }
