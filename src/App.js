@@ -1,4 +1,5 @@
 import "./App.css";
+import Clients from "./sections/Clients";
 import Header from "./sections/Header";
 import Industries from "./sections/Industries";
 import OurWorks from "./sections/OurWorks";
@@ -19,6 +20,7 @@ function App() {
       <OurWorks />
       <Industries />
       <Testimonials />
+      <Clients />
     </main>
   );
 }
