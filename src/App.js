@@ -1,5 +1,8 @@
 import "./App.css";
 import Clients from "./sections/Clients";
+import FAQ from "./sections/FAQ";
+import Footer from "./sections/Footer";
+import Goal from "./sections/Goal";
 import Header from "./sections/Header";
 import Industries from "./sections/Industries";
 import OurWorks from "./sections/OurWorks";
@@ -21,6 +24,9 @@ function App() {
       <Industries />
       <Testimonials />
       <Clients />
+      <Goal />
+      <FAQ />
+      <Footer />
     </main>
   );
 }

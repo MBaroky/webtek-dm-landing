@@ -24,7 +24,7 @@ function Clients() {
   return (
     <section
       id='clients'
-      className='-mb-5 relative z-[6] flex flex-col justify-center items-center px-16 py-20 bg-white rounded-none max-md:px-5 z-'>
+      className=' rounded-br-3xl rounded-bl-3xl -mb-5 relative z-[4] flex flex-col justify-center items-center px-16 py-20 bg-white rounded-none max-md:px-5 z-'>
       <div className='flex items-center flex-col mt-2.5 w-full max-w-[1200px] max-md:max-w-full'>
         <div className='flex gap-5 text-6xl font-bold max-md:flex-wrap max-md:text-4xl'>
           <div className='flex-auto text-center text-neutral-900 max-md:text-4xl'>

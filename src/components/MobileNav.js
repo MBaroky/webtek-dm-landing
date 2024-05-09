@@ -25,7 +25,7 @@ export default function MobileNav() {
 
       <SheetContent side='top' className='bg-black text-white'>
         <div className='flex flex-col items-center pb-20 mx-auto w-full text-base font-bold text-white max-w-[480px]'>
-          <header className='bg-[#000] flex justify-center items-center px-16 py-4 font-medium text-white bg-neutral-900 max-md:px-5 fixed top-0 left-0 w-full z-50'>
+          <header className='bg-[#000] flex justify-center items-center px-16 py-4 font-medium text-white max-md:px-5 fixed top-0 left-0 w-full z-50'>
             <div className='flex gap-5 items-center w-full max-w-[1196px] max-md:flex-wrap max-md:max-w-full'>
               <a
                 href='/'

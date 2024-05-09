@@ -15,11 +15,11 @@ export default function Team() {
           and expertise to the table, working tirelessly to understand
           your unique challenges and goals. Whether you're a startup
           looking to make a splash or an established brand aiming to
-          stay ahead of the curve,{" "}
+          stay ahead of the curve,
           <span className='font-outline-1 text-[#EEEEFD]'>
-            &nbsp we're here to be your trusted partner every step of
+            &nbsp; we're here to be your trusted partner every step of
             the way.
-          </span>{" "}
+          </span>
           <br />
         </div>
         <div className='flex gap-2 self-start mt-4'>
