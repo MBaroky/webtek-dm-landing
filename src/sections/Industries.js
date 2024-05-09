@@ -25,8 +25,8 @@ function Industries() {
           enable us to deliver innovative solutions tailored to the
           specific needs and nuances of industries.
         </div>
+        <IndustSlider />
       </div>
-      <IndustSlider />
     </section>
   );
 }

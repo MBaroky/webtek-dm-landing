@@ -19,7 +19,9 @@ function IndustriesItem({ label, icon }) {
         src={icon}
         alt=''
       />
-      <div className='my-auto leading-none'>{label}</div>
+      <div className='text-left max-lg:text-center my-auto leading-none'>
+        {label}
+      </div>
     </div>
   );
 }
