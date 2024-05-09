@@ -5,6 +5,7 @@ import OurWorks from "./sections/OurWorks";
 import Portfolio from "./sections/Portfolio";
 import Services from "./sections/Services";
 import Team from "./sections/Team";
+import Testimonials from "./sections/Testimonials";
 import WelcomeSection from "./sections/WelcomeSection";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Services />
       <OurWorks />
       <Industries />
+      <Testimonials />
     </main>
   );
 }

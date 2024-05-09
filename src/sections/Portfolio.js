@@ -6,7 +6,7 @@ function Portfolio() {
   return (
     <section
       id='portfolio'
-      className='-mb-5 relative z-[10] min-h-[450px] flex flex-col md:p-24 tracking-tighter max-md:text-4xl rounded-br-3xl rounded-bl-3xl -mb-3 z-20'
+      className='-mb-5 pt-24 relative z-[10] min-h-[450px] flex flex-col md:p-24 tracking-tighter max-md:text-4xl rounded-br-3xl rounded-bl-3xl -mb-3 z-20'
       style={{
         backgroundImage: `url("${PUBLIC_URL}/img/works-bg.png")`,
         backgroundColor: "white",
