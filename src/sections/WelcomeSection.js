@@ -12,9 +12,9 @@ function WelcomeSection() {
         <div className='flex gap-5 max-md:flex-col max-md:gap-0'>
           <div className='flex flex-col min-h-[300px] pb-[150px] w-[67%] max-md:ml-0 max-md:w-full relative z-10'>
             <h1 className='text-6xl max-w-[556px] font-bold text-white  max-md:mt-10 max-md:max-w-full max-md:text-4xl'>
-              Welcome to Your Ultimate
+              Leading Website Design & Development
               <span className='text-black font-outline-2 '>
-                &nbsp;Digital Marketing Solution
+                &nbsp; Agency in Dubai
               </span>
             </h1>
             <img
@@ -27,19 +27,18 @@ function WelcomeSection() {
             <div className='flex flex-col items-start self-stretch my-auto text-white max-md:mt-10'>
               <div className='shrink-0 bg-orange-100 h-[3px] w-[45px]' />
               <p className='self-stretch mt-4 text-sm'>
-                Are you ready to skyrocket your online presence and
-                drive unstoppable growth for your business? Look no
-                further! Our cutting-edge digital marketing services
-                are tailored to elevate your brand, engage your
-                audience, and maximize your ROI. Whether you're a
-                startup aiming to make a splash or an established
-                enterprise seeking to dominate your market, we've got
-                the expertise and passion to make it happen.
+                Ready to elevate your online presence? Look no further
+                than Webtek Digital. We excel in creating visually
+                striking, user-friendly websites that captivate
+                attention, engage visitors, and deliver tangible
+                results. Backed by our team of skilled developers,
+                designers, and digital strategists, we bring your
+                vision to life with a captivating online presence.
               </p>
               <a
                 href='/'
                 className='flex gap-2 mt-4 text-base font-medium'>
-                <span>Success Stories</span>
+                <span>Get Exclusive Discounts! </span>
                 <img
                   loading='lazy'
                   src={rightArrow}

@@ -2,31 +2,31 @@ const { PUBLIC_URL } = process.env;
 export const servicesList = [
   {
     title: "Social Media",
-    desc: "Elevate your brand's presence with captivating content and strategic engagement across social platforms.",
+    desc: "Engage and connect with your audience on various platforms to build meaningful relationships and boost brand visibility.",
     icon: `${PUBLIC_URL}/img/services/services_icon_01.svg`,
     img: `${PUBLIC_URL}/img/services/services_01.png`,
   },
   {
     title: "SEO",
-    desc: "Boost your search engine rankings with our optimization techniques and get discovered by your target audience.",
+    desc: "Improve your website's search engine rankings and increase organic traffic through strategic optimization techniques.",
     icon: `${PUBLIC_URL}/img/services/services_icon_02.svg`,
     img: `${PUBLIC_URL}/img/services/services_02.png`,
   },
   {
     title: "Paid Media",
-    desc: "Maximize your reach and ROI through targeted advertising campaigns tailored to your business objectives.",
+    desc: "Amplify your message and reach your target audience through targeted advertising across various channels.",
     icon: `${PUBLIC_URL}/img/services/services_icon_03.svg`,
     img: `${PUBLIC_URL}/img/services/services_03.png`,
   },
   {
     title: "Paid Social",
-    desc: "Leverage the power of social media advertising to connect with your audience and drive strong engagement.",
+    desc: "Maximize your reach and engagement by leveraging paid advertising on social media platforms to drive conversions and achieve your business goals.",
     icon: `${PUBLIC_URL}/img/services/services_icon_04.svg`,
     img: `${PUBLIC_URL}/img/services/services_04.png`,
   },
   {
     title: "Branding",
-    desc: "Define and amplify your brand identity with our creative solutions that leave a lasting impression.",
+    desc: "Craft a compelling brand identity and story that resonates with your audience, fostering trust, loyalty, and recognition.",
     icon: `${PUBLIC_URL}/img/services/services_icon_05.svg`,
     img: `${PUBLIC_URL}/img/services/services_05.png`,
   },

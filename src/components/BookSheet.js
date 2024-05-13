@@ -43,8 +43,8 @@ export default function BookSheet() {
   return (
     <Sheet open={openBooking} onOpenChange={setOpenBooking}>
       <SheetTrigger asChild>
-        <Button className='rounded-none hover:bg-white hover:text-black flex min-w-[170px] gap-2 justify-center items-center self-stretch px-3.5 py-3 text-base bg-violet-700 max-md:px-5'>
-          <span>Book A Demo</span>
+        <Button className='rounded-none hover:bg-white hover:text-black flex min-w-[200px] gap-2 justify-center items-center self-stretch px-3.5 py-3 text-base text-xs bg-violet-700 max-md:px-5'>
+          <span>Book a Free Consultation </span>
           <img
             loading='lazy'
             src={arrowIcon}

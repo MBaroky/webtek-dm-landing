@@ -11,13 +11,13 @@ export default function Services() {
         style={{ maxWidth: "calc((280px * 4) + 3em)" }}>
         <div className='shrink-0 self-start mt-2 bg-orange-100 h-[3px] w-[45px] max-md:ml-2.5'></div>
         <div className='mt-4 self-start text-left font-medium max-md:max-w-full'>
-          Our Digital Marketing Services
+          Why Choose Webtek Digital for Website Development Services?
         </div>
         <div className='mt-4 text-sm max-md:max-w-full text-left'>
-          We’re experts in all things marketing. Business-to-business,
-          cryptocurrency, NFT, and high-growth startup brands are our
-          sweet spot. Discover how we can scale your business to new
-          heights through our strategic services below:
+          Look no further than Webtek Digital for your business
+          transformation. With a proven track record of crafting
+          successful websites for our clients, we stand out as the
+          perfect partner for your digital journey.
           <br />
         </div>
         <div className='max-w-full'>
