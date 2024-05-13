@@ -39,7 +39,7 @@ function WelcomeSection() {
               <a
                 href='/'
                 className='flex gap-2 mt-4 text-base font-medium'>
-                <span>Success Stories</span>
+                <span>Success Stories {}</span>
                 <img
                   loading='lazy'
                   src={rightArrow}
