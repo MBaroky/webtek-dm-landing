@@ -30,6 +30,7 @@ jobs:
               kill -9 "$PORT_IN_USE"
               echo "Process killed"
           fi
+          failOnStandardError
 
       # Delete package-lock.json and node_modules
       - name: Clean Up
