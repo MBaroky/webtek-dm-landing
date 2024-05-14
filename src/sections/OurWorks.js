@@ -9,14 +9,13 @@ export default function OurWorks() {
       <div className='max-md:max-w-full flex flex-col relative md:absolute md:w-[33.333%] self-end rounded-none text-neutral-900 max-md:px-5'>
         <div className='mt-11 self-start bg-violet-700 h-[3px] w-[45px] max-md:mt-10 max-md:mr-2.5' />
         <div className='mt-4 text-base font-medium max-md:mr-2.5'>
-          Our Work
+          WHAT MAKES US UNIQUE?
         </div>
         <div className='mt-4 text-sm w-auto max-md:mr-2.5'>
-          Our dynamic digital marketing agency has empowered a wide
-          array of businesses and organizations to meet their
-          advertising goals. Drawing from rich experience across
-          various industries, we possess the insights and skills to
-          unlock your true potential.
+          Our Exceptional Website Development Services At Webtek
+          Digital, we stand out by providing a comprehensive array of
+          website development services tailored to your exact business
+          needs.
           <br />
         </div>
       </div>

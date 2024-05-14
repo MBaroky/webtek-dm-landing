@@ -24,26 +24,34 @@ function FAQItem({ question, answer }) {
 export default function FAQ() {
   const faqData = [
     {
-      question: "What is mobile app development?",
+      question:
+        "1.	What's Involved In Website Design And Development Services?",
       answer:
-        "Creating software applications for use on mobile devices.",
-    },
-    {
-      question: "What makes a good mobile app?",
-      answer:
-        "User-friendly interface, fast performance, and useful features.",
+        "Website design and development services create and build websites for businesses or individuals, covering everything from how they look to how they function online.",
     },
     {
       question:
-        "Why do you need a mobile app for your e-commerce business?",
+        "2.	How does a good website design benefit your business?",
       answer:
-        "Enhances customer experience, increases accessibility, and boosts sales potential.",
+        "A well-designed website can enhance your business by attracting more customers, improving user experience, and increasing credibility and trustworthiness online.",
     },
     {
       question:
-        "How long does it take to create a fully functioning mobile app?",
+        "3.	How can a well-designed website help your business?",
       answer:
-        "Varies based on complexity, typically several weeks to several months.",
+        "A well-designed website can help your business by attracting more visitors, increasing customer engagement, and improving conversion rates, ultimately leading to higher sales and greater online visibility.",
+    },
+    {
+      question:
+        "4. What are the services required for a start-up business website?",
+      answer:
+        "For a startup business website, essential services include web design, development, hosting, domain registration, content creation, SEO, and possibly e-commerce integration, ensuring a professional online presence to attract customers and establish credibility.",
+    },
+    {
+      question:
+        "5. What are the key factors to consider when choosing a web hosting provider?",
+      answer:
+        "When selecting a web hosting provider, consider factors such as uptime reliability, server speed, security measures, scalability options, customer support quality, and pricing plans to ensure optimal performance and support for your website.",
     },
   ];
 

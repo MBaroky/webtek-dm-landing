@@ -53,23 +53,30 @@ export default function BookSheet() {
           />
         </Button>
       </SheetTrigger>
-      <SheetContent side='top' className='bg-black text-white'>
-        <section className='flex justify-center items-center px-16 md:py-16 max-md:px-5'>
+      <SheetContent
+        side='top'
+        className='bg-black text-white max-h-[100vh] overflow-y-auto'>
+        <section className='flex justify-center items-center px-10 md:py-6 max-md:px-5'>
           <div className='flex gap-5 justify-between w-full max-w-[1196px] max-md:flex-wrap max-md:max-w-full'>
             <div className='flex flex-col self-start mt-24 text-white max-md:mt-0'>
               <h2 className='mt-4 text-base font-medium max-md:mt-1'>
-                Book Today!
+                Best Website Design and Development Agency in Dubai
               </h2>
               <p className='mt-4 text-sm max-md:mt-1'>
-                Step into the Realm of Digital Innovation: Secure Your
-                Exclusive Demo Experience Today!
-                <br />
-                Uncover the Dynamic Solutions that Drive Success. Our
-                Team of Experts Awaits to Showcase the Full Spectrum
-                of Possibilities, Tailored Specifically to Your
-                Business Needs. Seize this Opportunity to Explore,
-                Learn, and Strategize. Schedule Your Demo Now and
-                Ignite Your Journey Towards Digital Excellence!
+                Transform your online presence with Webtek Digital, a
+                leading website design company in Dubai. We offer
+                diverse web design and development services tailored
+                to your business's uniqueness, focusing on dynamic,
+                mobile-responsive designs that convert visitors into
+                valuable leads. With a commitment to delivering
+                tailored digital solutions, our expertise ensures your
+                brand stands out in the online sphere. Elevate your
+                business with our professional web design services,
+                attracting customers, creating engagement, and
+                flourishing across the Middle East. With over 15 years
+                of experience, we have the tools and expertise to
+                launch your distinct online identity and help you
+                thrive in the digital landscape.
               </p>
             </div>
             <div className='flex flex-col min-w-[300px] basis-1/3 px-8 py-11 max-md:py-1 text-base font-light bg-white max-md:px-5 max-md:max-w-full'>

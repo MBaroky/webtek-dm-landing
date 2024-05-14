@@ -14,10 +14,10 @@ export default function Goal() {
           <div className='flex flex-col w-[66%] max-md:ml-0 max-md:w-full'>
             <h1 className='flex relative flex-col grow text-6xl font-bold max-md:mt-10 max-md:max-w-full max-md:text-4xl'>
               <span className='text-white max-md:max-w-full max-md:text-4xl'>
-                Talk to a Full-Service Digital Marketing Agency About
-                Your{" "}
+                Join Hands with a Leading All-inclusive Website
+                Development{" "}
                 <span className='text-[#252524] font-outline-2'>
-                  Business Goal
+                  Agency in Dubai
                 </span>
               </span>
             </h1>
@@ -26,10 +26,9 @@ export default function Goal() {
             <div className='flex relative flex-col items-start mt-2 text-white max-md:mt-10'>
               <div className='shrink-0 bg-orange-100 h-[3px] w-[45px]' />
               <p className='self-stretch mt-5 text-sm'>
-                we're passionate about helping businesses reach their
-                maximum potential online. Tell us a little about your
-                brand and what you hope to achieve, and we'll be in
-                touch to discuss how we can help you grow.
+                Webtek Digital is committed to providing innovative
+                and scalable solutions to elevate your online
+                presence.
               </p>
               <button className='flex gap-2 items-center mt-4 text-base font-medium'>
                 <span>Book A Demo</span>

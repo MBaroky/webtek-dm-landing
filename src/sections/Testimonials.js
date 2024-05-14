@@ -12,8 +12,8 @@ function Testimonials() {
           Success Stories
         </div>
         <div className='mt-4 text-sm text-white max-md:max-w-full'>
-          Discover what our clients have to say about their experience
-          partnering with us.
+          Here's what our customers have to say about their
+          experiences with us!
         </div>
         <TestSlider />
       </div>
