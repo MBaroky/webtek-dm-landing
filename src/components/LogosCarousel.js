@@ -11,6 +11,7 @@ import {
 } from "./ui/carousel_mod";
 
 export function LogosCarousel() {
+  const { PUBLIC_URL } = process.env;
   return (
     <Carousel
       opts={{
@@ -32,7 +33,9 @@ export function LogosCarousel() {
               <div className='flex aspect-video items-center justify-center '>
                 <img
                   style={{ filter: "grayscale(1) invert(1)" }}
-                  src={`../img/brands/brands-${index + 1}.png`}
+                  src={`${PUBLIC_URL}/img/brands/brands-${
+                    index + 1
+                  }.png`}
                   alt=''
                 />
               </div>
