@@ -30,7 +30,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && mv -a build/. /var/www/html/landing.webtekdigital.com/webtek-dm-landing",
+    "build": "react-scripts build && cp -a build/. /var/www/html/landing.webtekdigital.com/webtek-dm-landing",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
