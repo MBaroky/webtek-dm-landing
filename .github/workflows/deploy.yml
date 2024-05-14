@@ -23,6 +23,7 @@ jobs:
       # Delete package-lock.json and node_modules
       - name: Clean Up
         run: |
+          ls
           rm -rf package-lock.json node_modules
 
       - name: Install dependencies
