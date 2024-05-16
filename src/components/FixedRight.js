@@ -20,12 +20,12 @@ function FixedRight() {
     {
       src: fixedPhone,
       alt: "phone-icon",
-      link: "tel:3333",
+      link: "tel:+971557872779",
     },
     {
       src: fixedWhatsapp,
       alt: "whatsapp-icon",
-      link: "https://web.whatsapp.com",
+      link: "https://api.whatsapp.com/send?phone=971557872779&text=I%20would%20like%20to%20know%20more%20about%20your%20services%20(Website,%20App%20Development,%20Digital%20Marketing,%20Google%20/%20Social%20Ads%20Management,%20SEO).",
     },
   ];
 

@@ -2,6 +2,8 @@ import rightArrowDark from "../assets/right-arrow-dark.svg";
 
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
 
 export const FooterForm = () => {
   const form = useRef();
@@ -37,7 +39,7 @@ export const FooterForm = () => {
   ) : (
     <>
       <form
-        novalidate='true'
+        noValidate='true'
         ref={form}
         onSubmit={handleSubmit}
         className=' group flex flex-col pt-2 rounded-2xl border border-white border-solid max-md:max-w-full'>
@@ -49,10 +51,10 @@ export const FooterForm = () => {
           <p className='mt-2 mr-7 text-sm text-white max-md:mr-2.5'>
             Reach out to us today and let's start a conversation.
           </p>
-          <label htmlFor='name' className='sr-only'>
+          {/* <label htmlFor='name' className='sr-only'>
             Name
-          </label>
-          <input
+          </label> */}
+          <Input
             type='text'
             id='name'
             placeholder='Name'
@@ -65,10 +67,10 @@ export const FooterForm = () => {
           <span class='mt-2 hidden text-sm text-red-300 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block'>
             Please enter at least 7 characters
           </span>
-          <label htmlFor='email' className='sr-only'>
+          {/* <label htmlFor='email' className='sr-only'>
             Email Address
-          </label>
-          <input
+          </label> */}
+          <Input
             required
             type='email'
             id='email'
@@ -81,15 +83,28 @@ export const FooterForm = () => {
           <span class='mt-2 hidden text-sm text-red-300 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block'>
             Please enter a valid email address
           </span>
-          <label htmlFor='message' className='sr-only'>
+
+          <Input
+            type='tel'
+            id='phone'
+            placeholder='Phone Number'
+            name='phone'
+            className='justify-center items-start px-4 py-3.5 mt-2.5 bg-white border-2 border-gray-200 border-solid max-md:pr-5  invalid:[&:not(:placeholder-shown):not(:focus)]:border-red-500 peer'
+            pattern='.{7,}'
+            required
+          />
+          <span class='mt-2 hidden text-sm text-red-300 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block'>
+            Please enter your phone number
+          </span>
+          {/* <label htmlFor='message' className='sr-only'>
             our Message
-          </label>
-          <textarea
+          </label> */}
+          <Textarea
             name='message'
+            rows='2'
             placeholder='Your Message'
-            className='flex gap-5 justify-end py-1.5 pr-1.5 pl-4 mt-2.5 bg-white border-2 border-gray-200 border-solid'
-            // className='justify-center items-start px-4 py-3.5 mt-2.5 bg-white border-2 border-gray-200 border-solid max-md:pr-5 max-h-[50px]'
-            id=''></textarea>
+            className='flex gap-5 justify-end py-1.5 pr-1.5 pl-4 mt-2.5 bg-white border-2 border-gray-200 border-solid max-h-1.5'
+            id=''></Textarea>
           <button
             type='submit'
             className='self-end -mt-8 group-invalid:pointer-events-none'>

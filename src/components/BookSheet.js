@@ -13,7 +13,7 @@ import {
   SheetTrigger,
 } from "./ui/sheet";
 
-export default function BookSheet() {
+export default function BookSheet({ children }) {
   const [formSuccess, setFormSuccess] = useState(false);
   const [formError, setFormError] = useState("");
   const form = useRef();
@@ -43,15 +43,19 @@ export default function BookSheet() {
   return (
     <Sheet open={openBooking} onOpenChange={setOpenBooking}>
       <SheetTrigger asChild>
-        <Button className='rounded-none hover:bg-white hover:text-black flex min-w-[200px] gap-2 justify-center items-center self-stretch px-3.5 py-3 text-base text-xs bg-violet-700 max-md:px-5'>
-          <span>Book a Free Consultation </span>
-          <img
-            loading='lazy'
-            src={arrowIcon}
-            alt=''
-            className='shrink-0 aspect-[1.59] w-[27px]'
-          />
-        </Button>
+        {children ? (
+          children
+        ) : (
+          <Button className='rounded-none hover:bg-white hover:text-black flex min-w-[200px] gap-2 justify-center items-center self-stretch px-3.5 py-3 text-xs bg-violet-700 max-md:px-5'>
+            <span>Book a Free Consultation </span>
+            <img
+              loading='lazy'
+              src={arrowIcon}
+              alt=''
+              className='shrink-0 aspect-[1.59] w-[27px]'
+            />
+          </Button>
+        )}
       </SheetTrigger>
       <SheetContent
         side='top'

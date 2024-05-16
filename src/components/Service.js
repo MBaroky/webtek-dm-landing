@@ -1,6 +1,6 @@
 export default function Service({ img, icon, title, desc }) {
   return (
-    <div className='flex bg-white justify-between h-full flex-col pt-7 '>
+    <div className='services-item flex bg-white justify-between h-full flex-col pt-7 '>
       <div className='flex flex-col px-7 w-full text-neutral-900'>
         <div className='flex gap-2.5 text-base font-medium'>
           <img
@@ -9,7 +9,9 @@ export default function Service({ img, icon, title, desc }) {
             className='shrink-0 aspect-square w-[34px]'
             alt=''
           />
-          <div className='my-auto leading-none'>{title}</div>
+          <div className='services-item-title my-auto leading-none'>
+            {title}
+          </div>
         </div>
         <div className='mt-6 text-xs'>
           {desc}
@@ -23,7 +25,7 @@ export default function Service({ img, icon, title, desc }) {
           className='object-cover aspect-square absolute inset-0 w-full'
           alt=''
         />
-        <div className='relative bg-[linear-gradient(#fff_0,rgba(255,255,255,0))] w-full min-h-[178px]' />
+        <div className='img-overlay relative bg-[linear-gradient(#fff_0,rgba(255,255,255,0))] w-full min-h-[178px]' />
       </div>
     </div>
   );

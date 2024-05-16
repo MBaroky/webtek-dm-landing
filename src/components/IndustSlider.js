@@ -12,7 +12,7 @@ import {
 
 function IndustriesItem({ label, icon }) {
   return (
-    <div className='flex md:basis-4/12 max-lg:basis-6/12 gap-3.5 flex max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:self-center mt-5 max-lg:w-auto'>
+    <div className='p-1 rounded-sm industries-item flex md:basis-4/12 max-lg:basis-6/12 gap-3.5 max-lg:flex-col max-lg:justify-center max-lg:items-center max-lg:self-center mt-5 max-lg:w-auto hover:bg-slate-100'>
       <img
         className='w-[30px] aspect-square object-contain'
         loading='lazy'

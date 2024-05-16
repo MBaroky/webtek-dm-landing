@@ -1,0 +1,33 @@
+name: Deploy Reactjs site to droplet
+
+on:
+  push:
+    branches: [web-landing]
+  pull_request:
+    branches: [web-landing]
+
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20.13.1"
+          cache: npm
+
+      # Delete package-lock.json and node_modules
+      - name: Clean Up
+        run: |
+          ls
+          rm -rf package-lock.json node_modules
+
+      - name: Install dependencies
+        run: npm install --force
+      - name: Build Project
+        run: npm run build
+      - name: Start server
+        run: sudo npm run start &

@@ -1,5 +1,7 @@
 import * as React from "react";
-import arrowIcon from "../assets/right-arrow.svg";
+import BookSheet from "../components/BookSheet";
+import rightArrow from "../assets/right-arrow.svg";
+import { Button } from "../components/ui/button";
 
 function FAQItem({ question, answer }) {
   return (
@@ -7,14 +9,19 @@ function FAQItem({ question, answer }) {
       <h3 className='mt-5 text-xl max-md:max-w-full'>{question}</h3>
       <div className='mt-3.5 text-sm max-md:max-w-full'>{answer}</div>
       <div className='flex gap-2 mt-4'>
-        <button className='flex gap-2 mt-4 items-center  text-base font-medium'>
-          <div>Read More</div>
-          <img
-            src={arrowIcon}
-            alt='Arrow pointing right'
-            className='shrink-0 w-5 aspect-square'
-          />
-        </button>
+        <BookSheet>
+          <Button
+            variant='gohst'
+            className='flex min-w-32 px-0 justify-between gap-2 self-start mt-4'>
+            <div>Read More</div>
+            <img
+              loading='lazy'
+              src={rightArrow}
+              className='shrink-0 w-5 aspect-square'
+              alt=''
+            />
+          </Button>
+        </BookSheet>
       </div>
       <hr className='shrink-0 self-stretch mt-3.5 h-px border border-solid bg-neutral-900 border-neutral-900 max-md:max-w-full' />
     </div>

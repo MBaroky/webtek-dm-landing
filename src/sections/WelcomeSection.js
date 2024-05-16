@@ -2,6 +2,8 @@ import * as React from "react";
 import rightArrow from "../assets/right-arrow.svg";
 import coverImg from "../assets/cover-image.svg";
 import { LogosCarousel } from "../components/LogosCarousel";
+import BookSheet from "../components/BookSheet";
+import { Button } from "../components/ui/button";
 
 function WelcomeSection() {
   return (
@@ -35,17 +37,17 @@ function WelcomeSection() {
                 designers, and digital strategists, we bring your
                 vision to life with a captivating online presence.
               </p>
-              <a
-                href='/'
-                className='flex gap-2 mt-4 text-base font-medium'>
-                <span>Get Exclusive Discounts! </span>
-                <img
-                  loading='lazy'
-                  src={rightArrow}
-                  alt='Arrow icon'
-                  className='shrink-0 w-5 aspect-square'
-                />
-              </a>
+              <BookSheet>
+                <Button className='flex gap-2 mt-4 text-base font-medium'>
+                  <span>Get Exclusive Discounts! </span>
+                  <img
+                    loading='lazy'
+                    src={rightArrow}
+                    alt='Arrow icon'
+                    className='shrink-0 w-5 aspect-square'
+                  />
+                </Button>
+              </BookSheet>
             </div>
           </div>
         </div>

@@ -1,9 +1,10 @@
 import * as React from "react";
 import arrowIcon from "../assets/right-arrow.svg";
+import BookSheet from "../components/BookSheet";
 
 export default function Goal() {
   return (
-    <section className='rounded-br-3xl rounded-bl-3xl -mb-5 relative z-[3] flex flex-col bg-black flex overflow-hidden relative flex-col justify-center items-center px-16 py-20 min-h-[442px] max-md:px-5'>
+    <section className='rounded-br-3xl rounded-bl-3xl -mb-5 relative z-[3] flex flex-col bg-black overflow-hidden justify-center items-center px-16 py-20 min-h-[442px] max-md:px-5'>
       <img
         src={`${process.env.PUBLIC_URL}/img/goal.png`}
         alt=''
@@ -30,14 +31,16 @@ export default function Goal() {
                 and scalable solutions to elevate your online
                 presence.
               </p>
-              <button className='flex gap-2 items-center mt-4 text-base font-medium'>
-                <span>Book A Demo</span>
-                <img
-                  src={arrowIcon}
-                  alt=''
-                  className='shrink-0 w-5 aspect-square'
-                />
-              </button>
+              <BookSheet>
+                <button className='flex gap-2 items-center mt-4 text-base font-medium'>
+                  <span>Book A Demo</span>
+                  <img
+                    src={arrowIcon}
+                    alt=''
+                    className='shrink-0 w-5 aspect-square'
+                  />
+                </button>
+              </BookSheet>
             </div>
           </div>
         </div>

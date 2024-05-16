@@ -1,12 +1,14 @@
 import * as React from "react";
 import rightArrow from "../assets/right-arrow.svg";
+import { Button } from "../components/ui/button";
+import BookSheet from "../components/BookSheet";
 
 export default function Team() {
   const { PUBLIC_URL } = process.env;
   return (
     <section
       id='team'
-      className='-mb-5 relative z-[9] rounded-br-3xl rounded-bl-3xl flex justify-center items-center px-16 py-20 text-base font-medium rounded-none bg-[linear-gradient(180deg,#F9E1D0_0%,#EEEEFD_100%)] text-neutral-900 max-md:px-5 rounded-br-3xl rounded-bl-3xl '>
+      className='-mb-5 relative z-[9] flex justify-center items-center px-16 py-20 text-base font-medium rounded-none bg-[linear-gradient(180deg,#F9E1D0_0%,#EEEEFD_100%)] text-neutral-900 max-md:px-5 rounded-br-3xl rounded-bl-3xl '>
       <div className='flex flex-col w-full max-w-[1214px] max-md:max-w-full'>
         <div className='shrink-0 w-12 bg-violet-700 h-[3px]' />
         <div className='mt-4 max-md:max-w-full'>
@@ -25,15 +27,19 @@ export default function Team() {
           </span>
           <br />
         </div>
-        <div className='flex gap-2 self-start mt-4'>
-          <div>Read More</div>
-          <img
-            loading='lazy'
-            src={rightArrow}
-            className='shrink-0 w-5 aspect-square'
-            alt=''
-          />
-        </div>
+        <BookSheet>
+          <Button
+            variant='gohst'
+            className='flex min-w-32 px-0 justify-between gap-2 self-start mt-4'>
+            <div>Read More</div>
+            <img
+              loading='lazy'
+              src={rightArrow}
+              className='shrink-0 w-5 aspect-square'
+              alt=''
+            />
+          </Button>
+        </BookSheet>
         <img
           loading='lazy'
           src={`${PUBLIC_URL}/img/team-bg.png`}
