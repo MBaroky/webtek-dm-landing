@@ -12,7 +12,7 @@ function FAQItem({ question, answer }) {
         <BookSheet>
           <Button
             variant='gohst'
-            className='flex min-w-32 px-0 justify-between gap-2 self-start mt-4'>
+            className='flex px-0 justify-between gap-2 self-start mt-4'>
             <div>Read More</div>
             <img
               loading='lazy'
