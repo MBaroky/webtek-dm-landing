@@ -45,7 +45,7 @@ export default function PortfolioSlider() {
       backgroundImage: `${PUBLIC_URL}/img/works/works-1.png`,
     },
     {
-      title: "Pulse website ui ux case study",
+      title: "Pulse Website",
       backgroundImage: `${PUBLIC_URL}/img/works/works-2.png`,
     },
     {
