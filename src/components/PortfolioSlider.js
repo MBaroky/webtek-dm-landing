@@ -37,11 +37,11 @@ export default function PortfolioSlider() {
   const { PUBLIC_URL } = process.env;
   const heroSections = [
     {
-      title: "Pulse website ui ux case study",
+      title: "Pulse Website",
       backgroundImage: `${PUBLIC_URL}/img/works/works-2.png`,
     },
     {
-      title: "The Spiarl Code Official Website",
+      title: "The Spiral Code Website",
       backgroundImage: `${PUBLIC_URL}/img/works/works-1.png`,
     },
     {
@@ -49,7 +49,7 @@ export default function PortfolioSlider() {
       backgroundImage: `${PUBLIC_URL}/img/works/works-2.png`,
     },
     {
-      title: "The Spiarl Code Official Website",
+      title: "The Spiral Code Website",
       backgroundImage: `${PUBLIC_URL}/img/works/works-1.png`,
     },
   ];
