@@ -42,8 +42,8 @@ export default function Team() {
         </BookSheet>
         <img
           loading='lazy'
-          src={`${PUBLIC_URL}/img/team-bg.png`}
-          className='mt-12 w-full aspect-[3.7] max-md:mt-10 max-md:max-w-full'
+          src={`${PUBLIC_URL}/img/Banners-06.webp`}
+          className='mt-12 w-full object-cover rounded-xl aspect-[3.7] max-md:mt-10 max-md:max-w-full'
           alt=''
         />
       </div>
