@@ -11,11 +11,12 @@ import Services from "./sections/Services";
 import Team from "./sections/Team";
 import Testimonials from "./sections/Testimonials";
 import WelcomeSection from "./sections/WelcomeSection";
+import logo from "./assets/logo.png";
 
 function App() {
   return (
     <main>
-      <Header />
+      <Header logo={logo} />
       <WelcomeSection />
       <Portfolio />
       <Team />
