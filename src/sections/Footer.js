@@ -8,7 +8,7 @@ import {
   informationItems,
 } from "../data/footerData";
 
-function Footer() {
+function Footer({ logo }) {
   const [productData, setProductData] = useState([]);
   const [companyData, setCompanyData] = useState([]);
   const [informationData, setInformationData] = useState([]);
@@ -58,7 +58,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <BottomFooter />
+        <BottomFooter logo={logo} />
       </div>
     </div>
   );

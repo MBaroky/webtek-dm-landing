@@ -27,7 +27,7 @@ function App() {
       <Clients />
       <Goal />
       <FAQ />
-      <Footer />
+      <Footer logo={logo} />
     </main>
   );
 }
