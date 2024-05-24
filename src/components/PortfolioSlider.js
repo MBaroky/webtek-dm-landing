@@ -33,27 +33,7 @@ function HeroSection({ title, backgroundImage }) {
   );
 }
 
-export default function PortfolioSlider() {
-  const { PUBLIC_URL } = process.env;
-  const heroSections = [
-    {
-      title: "Pulse Website",
-      backgroundImage: `${PUBLIC_URL}/img/works/works-2.png`,
-    },
-    {
-      title: "The Spiral Code Website",
-      backgroundImage: `${PUBLIC_URL}/img/works/works-1.png`,
-    },
-    {
-      title: "Pulse Website",
-      backgroundImage: `${PUBLIC_URL}/img/works/works-2.png`,
-    },
-    {
-      title: "The Spiral Code Website",
-      backgroundImage: `${PUBLIC_URL}/img/works/works-1.png`,
-    },
-  ];
-
+export default function PortfolioSlider({ data }) {
   return (
     <div className='flex flex-col'>
       <div className='w-full max-md:max-w-full'>
@@ -69,7 +49,7 @@ export default function PortfolioSlider() {
           ]}
           className='w-full  mt-5'>
           <CarouselContent className='-ml-1'>
-            {heroSections.map((section, index) => (
+            {data.map((section, index) => (
               <CarouselItem
                 key={index}
                 className='pl-3  md:basis-6/12'>

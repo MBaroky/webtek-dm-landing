@@ -18,7 +18,7 @@ function WorksSlider() {
   const { PUBLIC_URL } = process.env;
   const heroSections = [
     {
-      img: `${PUBLIC_URL}/img/works/our_works_01.jpg`,
+      img: `${PUBLIC_URL}/img/works/our_works.webp`,
       title: "Enhance User Experience with Customized Websites",
       desc: `Tailor Your Business Apps and Websites for Personalized Touch Access Highly Robust and Scalable Solutions
       `,
@@ -52,7 +52,7 @@ function WorksSlider() {
                   <img
                     loading='lazy'
                     src={section.img}
-                    className='w-full aspect-[1.2] object-cover object-right max-md:mt-6 max-md:max-w-full'
+                    className='w-full rounded-r-xl aspect-[1.2] object-cover object-right max-md:mt-6 max-md:max-w-full'
                     alt=''
                   />
                 </div>

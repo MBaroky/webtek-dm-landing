@@ -1,5 +1,5 @@
-// import TabsWrapper from "../components/TabsWrapper";
-import PortfolioSlider from "../components/PortfolioSlider";
+import TabsWrapper from "../components/TabsWrapper";
+// import PortfolioSlider from "../components/PortfolioSlider";
 import * as React from "react";
 
 function Portfolio() {
@@ -22,8 +22,8 @@ function Portfolio() {
             &nbsp;marketing objectives.
           </span>
         </h2>
-        {/* <TabsWrapper /> */}
-        <PortfolioSlider />
+        <TabsWrapper />
+        {/* <PortfolioSlider /> */}
       </div>
     </section>
   );
