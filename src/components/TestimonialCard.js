@@ -1,4 +1,4 @@
-import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
+// import { Card, CardContent, CardFooter, CardHeader } from "./ui/card";
 
 export default function TestimonialCard({
   imageSrc,
@@ -9,24 +9,20 @@ export default function TestimonialCard({
   className,
 }) {
   return (
-    <Card
+    <div
       className={`flex flex-col justify-between bg-transparent border-none card mb-5 ${className}`}>
       <div>
-        <CardHeader className=' p-0'>
-          <img
-            loading='lazy'
-            src={imageSrc}
-            alt=''
-            className='max-w-full aspect-[2.63] w-[140px]'
-          />
-        </CardHeader>
-        <CardContent className=' p-0'>
-          <p className='mt-4 text-justify text-sm text-white'>
-            {testimonial}
-          </p>
-        </CardContent>
+        <img
+          loading='lazy'
+          src={imageSrc}
+          alt=''
+          className='max-w-full aspect-[2.63] w-[140px]'
+        />
+        <p className='mt-4 text-justify text-sm text-white'>
+          {testimonial}
+        </p>
       </div>
-      <CardFooter className='flex gap-2.5 p-0 mt-4 text-white justify-self-end '>
+      <div className='flex gap-2.5 p-0 mt-4 text-white justify-self-end '>
         <img
           loading='lazy'
           src={authorImageSrc}
@@ -41,7 +37,7 @@ export default function TestimonialCard({
             {authorTitle}
           </div>
         </div>
-      </CardFooter>
-    </Card>
+      </div>
+    </div>
   );
 }
