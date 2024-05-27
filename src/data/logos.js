@@ -16,6 +16,6 @@ export const logos = [
   `${PUBLIC_URL}/img/logos/LOGOS-14.png`,
   `${PUBLIC_URL}/img/logos/LOGOS-15.png`,
   `${PUBLIC_URL}/img/logos/LOGOS-16.png`,
-  `${PUBLIC_URL}/img/logos/LOGOS-17.png`,
+  `${PUBLIC_URL}/img/logos/LOGOS-17a.png`,
   `${PUBLIC_URL}/img/logos/LOGOS-18.png`,
 ];
