@@ -31,7 +31,7 @@ export default function TestSlider() {
         {testimonials.map((testimonial, index) => (
           <CarouselItem
             key={index}
-            className={`md:basis-1/3 ${
+            className={`md:basis-1/3 flex ${
               index !== 0
                 ? "md:pl-5  md:border-l-[1px] border-white border-solid"
                 : ""

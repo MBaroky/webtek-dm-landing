@@ -101,7 +101,7 @@ export default function BookSheet({ children }) {
                 <>
                   <form
                     ref={form}
-                    novalidate='true'
+                    noValidate={true}
                     className='mt-5 max-md:mt-1 group'
                     onSubmit={handleSubmit}>
                     <Input
@@ -113,7 +113,7 @@ export default function BookSheet({ children }) {
                       pattern='.{7,}'
                       required
                     />
-                    <span class='mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block'>
+                    <span className='mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block'>
                       Please enter at least 7 characters
                     </span>
 
@@ -125,7 +125,7 @@ export default function BookSheet({ children }) {
                       pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$'
                       required
                     />
-                    <span class='mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block'>
+                    <span className='mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block'>
                       Please enter a valid email address
                     </span>
 
@@ -138,7 +138,7 @@ export default function BookSheet({ children }) {
                       pattern='.{7,}'
                       required
                     />
-                    <span class='mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block'>
+                    <span className='mt-2 hidden text-sm text-red-500 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block'>
                       Please enter your phone number
                     </span>
 

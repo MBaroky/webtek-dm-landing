@@ -39,7 +39,7 @@ export const FooterForm = () => {
   ) : (
     <>
       <form
-        noValidate='true'
+        noValidate={true}
         ref={form}
         onSubmit={handleSubmit}
         className=' group flex flex-col pt-2 rounded-2xl border border-white border-solid max-md:max-w-full'>
@@ -64,7 +64,7 @@ export const FooterForm = () => {
             pattern='.{7,}'
             required
           />
-          <span class='mt-2 hidden text-sm text-red-300 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block'>
+          <span className='mt-2 hidden text-sm text-red-300 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block'>
             Please enter at least 7 characters
           </span>
           {/* <label htmlFor='email' className='sr-only'>
@@ -80,7 +80,7 @@ export const FooterForm = () => {
             pattern='[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$'
             aria-label='Email Address'
           />
-          <span class='mt-2 hidden text-sm text-red-300 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block'>
+          <span className='mt-2 hidden text-sm text-red-300 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block'>
             Please enter a valid email address
           </span>
 
@@ -93,7 +93,7 @@ export const FooterForm = () => {
             pattern='.{7,}'
             required
           />
-          <span class='mt-2 hidden text-sm text-red-300 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block'>
+          <span className='mt-2 hidden text-sm text-red-300 peer-[&:not(:placeholder-shown):not(:focus):invalid]:block'>
             Please enter your phone number
           </span>
           {/* <label htmlFor='message' className='sr-only'>
