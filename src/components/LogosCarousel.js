@@ -1,5 +1,6 @@
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
+import { logos } from "../data/logos";
 
 import {
   Carousel,
@@ -24,7 +25,7 @@ export function LogosCarousel() {
       ]}
       className='w-full  mt-5'>
       <CarouselContent className='-ml-1'>
-        {Array.from({ length: 8 }).map((_, index) => (
+        {logos?.map((url, index) => (
           <CarouselItem
             key={index}
             className='pl-1 basis-1/3 md:basis-1/4 lg:basis-2/12'>
@@ -32,7 +33,7 @@ export function LogosCarousel() {
               <div className='flex aspect-video items-center justify-center '>
                 <img
                   style={{ filter: "grayscale(1) invert(1)" }}
-                  src={`../img/brands/brands-${index + 1}.png`}
+                  src={url}
                   alt=''
                 />
               </div>

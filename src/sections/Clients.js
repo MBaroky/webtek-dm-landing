@@ -1,26 +1,15 @@
 import React from "react";
-
+import { logos } from "../data/logos";
 import Autoplay from "embla-carousel-autoplay";
 
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  //   CarouselDots,
+  CarouselDots,
 } from "../components/ui/carousel_mod";
 
 function Clients() {
-  const { PUBLIC_URL } = process.env;
-  const imagesList = [
-    `${PUBLIC_URL}/img/clients/clients-01.png`,
-    `${PUBLIC_URL}/img/clients/clients-02.png`,
-    `${PUBLIC_URL}/img/clients/clients-03.png`,
-    `${PUBLIC_URL}/img/clients/clients-04.png`,
-    `${PUBLIC_URL}/img/clients/clients-05.png`,
-    `${PUBLIC_URL}/img/clients/clients-06.png`,
-    `${PUBLIC_URL}/img/clients/clients-07.png`,
-    `${PUBLIC_URL}/img/clients/clients-08.png`,
-  ];
   return (
     <section
       id='clients'
@@ -49,14 +38,14 @@ function Clients() {
             }),
           ]}
           className='-ml-1 w-full'>
-          <CarouselContent className='flex md:flex-wrap w-full mt-9 md:flex-row ml-0'>
-            {imagesList.map((item, index) => (
+          <CarouselContent className=' md:flex-wrap  w-full mt-9  ml-0'>
+            {logos.map((item, index) => (
               <CarouselItem
                 key={index}
-                className={`${
-                  index % 4 !== 0 ? "md:border-l-[1px]" : ""
-                } ${index < 4 ? "md:border-b-[1px]" : ""}
-              clients-slide basis-6/12 pl-0 md:basis-1/4 flex  aspect-square justify-center items-center border-black border-solid max-md:p-3 relative`}>
+                className={`
+                ${index % 4 !== 0 ? "md:border-l-[1px]" : ""}
+                ${index < 4 ? "md:border-b-[1px]" : ""}
+              clients-slide basis-6/12 pl-0 md:basis-1/4 flex   aspect-square justify-center items-center border-black border-solid max-md:p-3 relative`}>
                 <img src={item} alt='' />
                 {index % 2 === 0 ? (
                   <div className='md:hidden bg-black w-[1px] absolute h-full left-[100%] top-0'></div>
@@ -66,7 +55,7 @@ function Clients() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          {/* <CarouselDots /> */}
+          <CarouselDots className='mt-5' />
         </Carousel>
       </div>
     </section>
