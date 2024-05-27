@@ -12,50 +12,65 @@ import {
 function Clients() {
   return (
     <section
-      id='clients'
-      className=' rounded-br-3xl rounded-bl-3xl -mb-5 relative z-[4] flex flex-col justify-center items-center px-16 py-20 bg-white rounded-none max-md:px-5 z-'>
-      <div className='flex items-center flex-col mt-2.5 w-full max-w-[1200px] max-md:max-w-full'>
-        <div className='flex gap-5 text-6xl font-bold max-md:flex-wrap max-md:text-4xl'>
-          <div className='flex-auto text-center text-neutral-900 max-md:text-4xl'>
+      id="clients"
+      className=" z- relative z-[4] -mb-5 flex flex-col items-center justify-center rounded-none rounded-bl-3xl rounded-br-3xl bg-white px-16 py-20 max-md:px-5"
+    >
+      <div className="mt-2.5 flex w-full max-w-[1200px] flex-col items-center max-md:max-w-full">
+        <div className="flex gap-5 text-6xl font-bold max-md:flex-wrap max-md:text-4xl">
+          <div className="flex-auto text-center text-neutral-900 max-md:text-4xl">
             Join our growing list of{" "}
-            <span className='font-outline-1 text-white'>
-              happy clients
-            </span>
+            <span className="font-outline-1 text-white">happy clients</span>
           </div>
         </div>
         <Carousel
           opts={{
             breakpoints: {
-              "(min-width: 768px)": { loop: false },
+              // "(min-width: 768px)": { loop: false },
             },
             align: "start",
             loop: true,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
           }}
           plugins={[
             Autoplay({
               delay: 2000,
             }),
           ]}
-          className='-ml-1 w-full'>
-          <CarouselContent className=' md:flex-wrap  w-full mt-9  ml-0'>
-            {logos.map((item, index) => (
-              <CarouselItem
-                key={index}
-                className={`
-                ${index % 4 !== 0 ? "md:border-l-[1px]" : ""}
-                ${index < 4 ? "md:border-b-[1px]" : ""}
-              clients-slide basis-6/12 pl-0 md:basis-1/4 flex   aspect-square justify-center items-center border-black border-solid max-md:p-3 relative`}>
-                <img src={item} alt='' />
-                {index % 2 === 0 ? (
-                  <div className='md:hidden bg-black w-[1px] absolute h-full left-[100%] top-0'></div>
-                ) : (
-                  <></>
-                )}
-              </CarouselItem>
-            ))}
+          className="-ml-1 w-full"
+        >
+          <div className="absolute left-[25%] top-[50%] h-[80%] w-[1px] translate-y-[-50%] bg-black max-md:hidden"></div>
+          <div className="absolute left-[50%] top-[50%] h-[80%] w-[1px] translate-y-[-50%] bg-black max-md:hidden"></div>
+          <div className="absolute left-[75%] top-[50%] h-[80%] w-[1px] translate-y-[-50%] bg-black max-md:hidden"></div>
+          <CarouselContent className="relative ml-0  mt-9 w-full ">
+            {logos.map((item, index, array) => {
+              if (index % 2 === 0) {
+                return (
+                  <CarouselItem
+                    key={index}
+                    className={`${index > 0 ? "" : ""}
+                    clients-slide relative flex
+              flex-row items-center justify-center  border-none px-4 max-md:w-full md:basis-1/4 md:flex-col`}
+                  >
+                    <img
+                      src={item}
+                      className=" aspect-square object-contain max-md:w-[50%] "
+                      alt=""
+                    />
+                    <img
+                      src={array[index + 1]}
+                      className="aspect-square  object-contain max-md:w-[50%]  "
+                      alt=""
+                    />
+
+                    <div className="absolute left-[50%] top-0 h-full w-[1px] bg-black md:left-0 md:top-[50%] md:h-[1px] md:w-full"></div>
+                  </CarouselItem>
+                );
+              } else {
+                return <></>;
+              }
+            })}
           </CarouselContent>
-          <CarouselDots className='mt-5' />
+          <CarouselDots className="mt-5" />
         </Carousel>
       </div>
     </section>
